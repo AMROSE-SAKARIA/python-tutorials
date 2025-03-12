@@ -8,9 +8,22 @@ def is_prime(n):
     return True
 
 n = int(input("Enter number of elements: "))
-nums = [int(input("Enter number: ")) for _ in range(n)]
-primes = [num for num in nums if is_prime(num)]
-composites = [num for num in nums if num not in primes]
+nums = []
+
+for _ in range(n):
+    num = int(input("Enter number: "))
+    nums.append(num)
+
+primes = []
+composites = []
+
+for num in nums:
+    if is_prime(num):
+        primes.append(num)
+    else:
+        composites.append(num)
+
 print("Primes:", primes)
 print("Composites:", composites)
+
     

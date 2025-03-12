@@ -1,4 +1,3 @@
-
 def fib(n):
     if n <= 1:
         return n
@@ -6,4 +5,3 @@ def fib(n):
 
 n = int(input("Enter n: "))
 print("Fibonacci number:", fib(n))
-    
